@@ -1,0 +1,430 @@
+V 0.0.4
+T 2025-04-04T22:59:36.814+00:00
+ID 3|7b3b17c6-11a8-11f0-8c0f-f44d30aed82f
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py"
+RR a|0.019
+M J2:"RPA_01_Compare_results"
+M m:"tasks"
+M n:"C:\\Applications\\RPA 01 - INGRESO DE ESCRITOS DE PAGO GARANTIA ESTATAL EN PODER JUDICIAL\\tasks.py"
+M J3:"\n    RPA 01 - Descarga del Excel del poder judicial y comparacion con el Excel de ingreso del bot.\n    "
+P J1:J2|m|n|J3|99
+RT J1|7736.105
+M t:"METHOD"
+RE J1|t|7736.111
+M u:"stdout"
+M Ec:"Done"
+C u|Ec|7745.0
+M w:"\n"
+C u|w|7745.003
+M mI:"ERROR"
+EE t|mI|7745.003
+M r:"task_name"
+C r|J2|7745.008
+M f:"regular"
+M x:" status: "
+C f|x|7745.009
+M LE:"error"
+M LF:"FAIL\n"
+C LE|LF|7745.009
+M LG:"\nMessage: element click intercepted: Element <a id=\"link2C\" href=\"#segunda\" class=\"btn btn-danger btn-block\" data-toggle=\"tab\" role=\"button\">...</a> is not clickable at point (1411, 327). Other element would receive the click: <div class=\"w-100 d-flex flex-row-reverse pr-3\">...</div>\n  (Session info: chrome=135.0.7049.41)\nStacktrace:\n\tGetHandleVerifier [0x00007FF6F93D1F55+78133]\n\tGetHandleVerifier [0x00007FF6F93D1FB0+78224]\n\t(No symbol) [0x00007FF6F91991BA]\n\t(No symbol) [0x00007FF6F91F70D9]\n\t(No symbol) [0x00007FF6F91F4A92]\n\t(No symbol) [0x00007FF6F91F1B31]\n\t(No symbol) [0x00007FF6F91F0A31]\n\t(No symbol) [0x00007FF6F91E2164]\n\t(No symbol) [0x00007FF6F921715A]\n\t(No symbol) [0x00007FF6F91E1A16]\n\t(No symbol) [0x00007FF6F9217370]\n\t(No symbol) [0x00007FF6F923F21F]\n\t(No symbol) [0x00007FF6F9216F33]\n\t(No symbol) [0x00007FF6F91E0358]\n\t(No symbol) [0x00007FF6F91E10C3]\n\tGetHandleVerifier [0x00007FF6F969BA8D+3001453]\n\tGetHandleVerifier [0x00007FF6F9695E72+2977874]\n\tGetHandleVerifier [0x00007FF6F96B497D+3103581]\n\tGetHandleVerifier [0x00007FF6F93EC7EA+186826]\n\tGetHandleVerifier [0x00007FF6F93F43FF+218591]\n\tGetHandleVerifier [0x00007FF6F93D9D94+110452]\n\tGetHandleVerifier [0x00007FF6F93D9F42+110882]\n\tGetHandleVerifier [0x00007FF6F93C0379+5465]\n\tBaseThreadInitThunk [0x00007FFC37287374+20]\n\tRtlUserThreadStart [0x00007FFC3797CC91+33]\n\n"
+C LE|LG|7745.01
+M LH:"=============== "
+C f|LH|7745.015
+M LI:"Full Traceback (running "
+C f|LI|7745.015
+C r|J2|7745.015
+M LJ:")"
+C f|LJ|7745.016
+M LK:" ================\n"
+C f|LK|7745.016
+M LL:"traceback"
+M LM:"Traceback (most recent call last):\n  File \"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\robocorp\\tasks\\_commands.py\", line 440, in run\n    result = task.run(*args, **kwargs)\n  File \"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\robocorp\\tasks\\_task.py\", line 89, in run\n    return self.method(*args, **kwargs)\n  File \"C:\\Applications\\RPA 01 - INGRESO DE ESCRITOS DE PAGO GARANTIA ESTATAL EN PODER JUDICIAL\\tasks.py\", line 114, in RPA_01_Compare_results\n    driver.find_element(By.ID, value='link2C').click()\n  File \"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 93, in click\n    self._execute(Command.CLICK_ELEMENT)\n  File \"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 394, in _execute\n    return self._parent.execute(command, params)\n  File \"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 347, in execute\n    self.error_handler.check_response(response)\n  File \"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\nselenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a id=\"link2C\" href=\"#segunda\" class=\"btn btn-danger btn-block\" data-toggle=\"tab\" role=\"button\">...</a> is not clickable at point (1411, 327). Other element would receive the click: <div class=\"w-100 d-flex flex-row-reverse pr-3\">...</div>\n  (Session info: chrome=135.0.7049.41)\nStacktrace:\n\tGetHandleVerifier [0x00007FF6F93D1F55+78133]\n\tGetHandleVerifier [0x00007FF6F93D1FB0+78224]\n\t(No symbol) [0x00007FF6F91991BA]\n\t(No symbol) [0x00007FF6F91F70D9]\n\t(No symbol) [0x00007FF6F91F4A92]\n\t(No symbol) [0x00007FF6F91F1B31]\n\t(No symbol) [0x00007FF6F91F0A31]\n\t(No symbol) [0x00007FF6F91E2164]\n\t(No symbol) [0x00007FF6F921715A]\n\t(No symbol) [0x00007FF6F91E1A16]\n\t(No symbol) [0x00007FF6F9217370]\n\t(No symbol) [0x00007FF6F923F21F]\n\t(No symbol) [0x00007FF6F9216F33]\n\t(No symbol) [0x00007FF6F91E0358]\n\t(No symbol) [0x00007FF6F91E10C3]\n\tGetHandleVerifier [0x00007FF6F969BA8D+3001453]\n\tGetHandleVerifier [0x00007FF6F9695E72+2977874]\n\tGetHandleVerifier [0x00007FF6F96B497D+3103581]\n\tGetHandleVerifier [0x00007FF6F93EC7EA+186826]\n\tGetHandleVerifier [0x00007FF6F93F43FF+218591]\n\tGetHandleVerifier [0x00007FF6F93D9D94+110452]\n\tGetHandleVerifier [0x00007FF6F93D9F42+110882]\n\tGetHandleVerifier [0x00007FF6F93C0379+5465]\n\tBaseThreadInitThunk [0x00007FFC37287374+20]\n\tRtlUserThreadStart [0x00007FFC3797CC91+33]\n\n\n"
+C LL|LM|7745.019
+M z:"================================================================================\n"
+C f|z|7745.027
+M LN:"FAIL"
+M LO:"Message: element click intercepted: Element <a id=\"link2C\" href=\"#segunda\" class=\"btn btn-danger btn-block\" data-toggle=\"tab\" role=\"button\">...</a> is not clickable at point (1411, 327). Other element would receive the click: <div class=\"w-100 d-flex flex-row-reverse pr-3\">...</div>\n  (Session info: chrome=135.0.7049.41)\nStacktrace:\n\tGetHandleVerifier [0x00007FF6F93D1F55+78133]\n\tGetHandleVerifier [0x00007FF6F93D1FB0+78224]\n\t(No symbol) [0x00007FF6F91991BA]\n\t(No symbol) [0x00007FF6F91F70D9]\n\t(No symbol) [0x00007FF6F91F4A92]\n\t(No symbol) [0x00007FF6F91F1B31]\n\t(No symbol) [0x00007FF6F91F0A31]\n\t(No symbol) [0x00007FF6F91E2164]\n\t(No symbol) [0x00007FF6F921715A]\n\t(No symbol) [0x00007FF6F91E1A16]\n\t(No symbol) [0x00007FF6F9217370]\n\t(No symbol) [0x00007FF6F923F21F]\n\t(No symbol) [0x00007FF6F9216F33]\n\t(No symbol) [0x00007FF6F91E0358]\n\t(No symbol) [0x00007FF6F91E10C3]\n\tGetHandleVerifier [0x00007FF6F969BA8D+3001453]\n\tGetHandleVerifier [0x00007FF6F9695E72+2977874]\n\tGetHandleVerifier [0x00007FF6F96B497D+3103581]\n\tGetHandleVerifier [0x00007FF6F93EC7EA+186826]\n\tGetHandleVerifier [0x00007FF6F93F43FF+218591]\n\tGetHandleVerifier [0x00007FF6F93D9D94+110452]\n\tGetHandleVerifier [0x00007FF6F93D9F42+110882]\n\tGetHandleVerifier [0x00007FF6F93C0379+5465]\n\tBaseThreadInitThunk [0x00007FFC37287374+20]\n\tRtlUserThreadStart [0x00007FFC3797CC91+33]\n"
+ET LN|LO|7745.028
+M LQ:"Teardown tasks"
+M LR:"teardown"
+M e:""
+P LP:LQ|LR|e|e|0
+ST LP|7745.029
+M LS:"Process snapshot"
+SPS LS|7745.322
+M LT:"System information:\nMemory: Total: 7.9 G, Available: 3.0 G, Used: 62.5 %\nCPUs: 4"
+P LU:e|e|e|e|0
+L I|LT|LU|0|7745.329
+M LV:"Subprocess: chrome.exe (pid: 14856, status: running)\nCommand Line: C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe --type=renderer --user-data-dir=C:\\RobocorpHome\\temp\\eea522d7440df395\\scoped_dir15560_602582527 --no-pre-read-main-dll --enable-automation --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --video-capture-use-gpu-memory-buffer --lang=es --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1742852834285716 --launch-time-ticks=962485440658 --field-trial-handle=1996,i,15980171538828589808,14602545118965208601,262144 --variations-seed-version --enable-logging=handle --log-file=4688 --log-level=0 --mojo-platform-channel-handle=4684 /prefetch:1\nStarted: 22:08:39\nParent pid: 18852\nResident Set Size: 27.4 M\nVirtual Memory Size: 13.1 M"
+L I|LV|LU|0|7745.435
+M LW:"OutputToPortThread|Thread ID: 18728 (daemon)"
+STD LW|7745.435
+M LX:"c:\\Users\\Eduardo Qui\u00f1ones\\.vscode\\extensions\\ms-python.debugpy-2025.4.1-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\_pydev_bundle\\pydev_monkey.py"
+M LY:"__call__"
+M LZ:"ret = self.original_func(*self.args, **self.kwargs)"
+TBE LX|1131|LY|LZ
+M lr:"self"
+M L0:"_NewThreadStartupWithTrace"
+M L1:"<_pydev_bundle.pydev_monkey._NewThreadStartupWithTrace object at 0x00000191AAEA2320>"
+TBV lr|L0|L1
+M L2:"py_db"
+M L3:"PyDB"
+M L4:"<pydevd.PyDB object at 0x00000191AA28A710>"
+TBV L2|L3|L4
+M L5:"thread_id"
+M P:"str"
+M L6:"'pid_15268_id_1725149356304'"
+TBV L5|P|L6
+M L7:"t"
+M L8:"Thread"
+M L9:"<Thread(OutputToPortThread, started daemon 18728)>"
+TBV L7|L8|L9
+M Ma:"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\threading.py"
+M Mb:"_bootstrap"
+M Mc:"self._bootstrap_inner()"
+TBE Ma|973|Mb|Mc
+TBV lr|L8|L9
+M Md:"_bootstrap_inner"
+M Me:"self.run()"
+TBE Ma|1016|Md|Me
+TBV lr|L8|L9
+M lY:"run"
+M Mf:"self._target(*self._args, **self._kwargs)"
+TBE Ma|953|lY|Mf
+TBV lr|L8|L9
+M Mg:"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\robocorp\\tasks\\_log_output_setup.py"
+M Mh:"write_in_thread"
+M Mi:"msg = q.get()"
+TBE Mg|73|Mh|Mi
+M Mj:"msg"
+M Mk:"'ST LP|7745.012\\n'"
+TBV Mj|P|Mk
+M Ml:"client_socket"
+M Mm:"socket"
+M Mn:"<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 65250), raddr=('127.0.0.1', 64038)>"
+TBV Ml|Mm|Mn
+M Mo:"log"
+M Lo:"module"
+M Mp:"<module 'robocorp.log' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV Mo|Lo|Mp
+M Mq:"port_in_env"
+M Mr:"'64038'"
+TBV Mq|P|Mr
+M Ms:"q"
+M Mt:"Queue"
+M Mu:"<queue.Queue object at 0x00000191AAEA1FC0>"
+TBV Ms|Mt|Mu
+M Mv:"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\queue.py"
+M Mw:"get"
+M Mx:"self.not_empty.wait()"
+TBE Mv|171|Mw|Mx
+TBV lr|Mt|Mu
+M My:"block"
+M a9:"bool"
+M bk:"True"
+TBV My|a9|bk
+M dx:"timeout"
+M ac:"NoneType"
+M ad:"None"
+TBV dx|ac|ad
+M Mz:"wait"
+M MA:"waiter.acquire()"
+TBE Ma|320|Mz|MA
+M MB:"Condition"
+M MC:"<Condition(<unlocked _thread.lock object at 0x00000191AAEAE840>, 1)>"
+TBV lr|MB|MC
+TBV dx|ac|ad
+M MD:"waiter"
+M ME:"lock"
+M MF:"<locked _thread.lock object at 0x00000191AE8E7240>"
+TBV MD|ME|MF
+M MG:"saved_state"
+TBV MG|ac|ad
+M MH:"gotit"
+M ba:"False"
+TBV MH|a9|ba
+ETD 7745.451
+M MI:"pydevd.CheckAliveThread|Thread ID: 14584 (non daemon)"
+STD MI|7745.451
+TBE Ma|973|Mb|Mc
+M MJ:"CheckAliveThread"
+M MK:"<CheckAliveThread(pydevd.CheckAliveThread, started 14584)>"
+TBV lr|MJ|MK
+TBE Ma|1016|Md|Me
+TBV lr|MJ|MK
+M ML:"c:\\Users\\Eduardo Qui\u00f1ones\\.vscode\\extensions\\ms-python.debugpy-2025.4.1-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\_pydevd_bundle\\pydevd_daemon_thread.py"
+M MM:"self._on_run()"
+TBE ML|53|lY|MM
+TBV lr|MJ|MK
+M MN:"created_pydb_daemon"
+M K:"dict"
+M MO:"{<WriterThread(pydevd.Writer, started daemon 5296)>: 1, <ReaderThread(pydevd.Reader, started daemon 18228)>: 1, <PyDBCommandThread(pydevd.CommandThread, started daemon 16020)>: 1, <CheckAliveThread(pydevd.CheckAliveThread, started 14584)>: 1}"
+TBV MN|K|MO
+M MP:"c:\\Users\\Eduardo Qui\u00f1ones\\.vscode\\extensions\\ms-python.debugpy-2025.4.1-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\pydevd.py"
+M MQ:"_on_run"
+M MR:"self._wait_event.wait(TIMEOUT_SLOW)"
+TBE MP|325|MQ|MR
+TBV lr|MJ|MK
+M MS:"can_exit"
+M lv:"function"
+M MT:"<function CheckAliveThread._on_run.<locals>.can_exit at 0x00000191AA2B2440>"
+TBV MS|lv|MT
+TBV L2|L3|L4
+M MU:"signaled = self._cond.wait(timeout)"
+TBE Ma|607|Mz|MU
+M MV:"Event"
+M MW:"<threading.Event object at 0x00000191AA31B8E0>"
+TBV lr|MV|MW
+M MX:"float"
+M MY:"0.2"
+TBV dx|MX|MY
+M MZ:"signaled"
+TBV MZ|a9|ba
+M M0:"gotit = waiter.acquire(True, timeout)"
+TBE Ma|324|Mz|M0
+M M1:"<Condition(<unlocked _thread.lock object at 0x00000191AA2FCF40>, 1)>"
+TBV lr|MB|M1
+TBV dx|MX|MY
+M M2:"<locked _thread.lock object at 0x00000191AFA42C00>"
+TBV MD|ME|M2
+TBV MG|ac|ad
+TBV MH|a9|ba
+ETD 7745.458
+M M3:"pydevd.CommandThread|Thread ID: 16020 (daemon)"
+STD M3|7745.458
+TBE Ma|973|Mb|Mc
+M M4:"PyDBCommandThread"
+M M5:"<PyDBCommandThread(pydevd.CommandThread, started daemon 16020)>"
+TBV lr|M4|M5
+TBE Ma|1016|Md|Me
+TBV lr|M4|M5
+TBE ML|53|lY|MM
+TBV lr|M4|M5
+TBV MN|K|MO
+M M6:"self._py_db_command_thread_event.wait(TIMEOUT_SLOW)"
+TBE MP|279|MQ|M6
+TBV lr|M4|M5
+TBE Ma|607|Mz|MU
+M M7:"<threading.Event object at 0x00000191AA28A890>"
+TBV lr|MV|M7
+TBV dx|MX|MY
+TBV MZ|a9|ba
+TBE Ma|324|Mz|M0
+M M8:"<Condition(<unlocked _thread.lock object at 0x00000191AA2BED40>, 1)>"
+TBV lr|MB|M8
+TBV dx|MX|MY
+M M9:"<locked _thread.lock object at 0x00000191AAF46A40>"
+TBV MD|ME|M9
+TBV MG|ac|ad
+TBV MH|a9|ba
+ETD 7745.46
+M Na:"pydevd.Reader|Thread ID: 18228 (daemon)"
+STD Na|7745.46
+TBE Ma|973|Mb|Mc
+M Nb:"ReaderThread"
+M Nc:"<ReaderThread(pydevd.Reader, started daemon 18228)>"
+TBV lr|Nb|Nc
+TBE Ma|1016|Md|Me
+TBV lr|Nb|Nc
+TBE ML|53|lY|MM
+TBV lr|Nb|Nc
+TBV MN|K|MO
+M Nd:"c:\\Users\\Eduardo Qui\u00f1ones\\.vscode\\extensions\\ms-python.debugpy-2025.4.1-win32-x64\\bundled\\libs\\debugpy\\_vendored\\pydevd\\_pydevd_bundle\\pydevd_comm.py"
+M Ne:"line = self._read_line()"
+TBE Nd|245|MQ|Ne
+TBV lr|Nb|Nc
+M Nf:"content_len"
+M bu:"int"
+M Ng:"-1"
+TBV Nf|bu|Ng
+M Nh:"line"
+M Ni:"bytes"
+M Nj:"b'\\r\\n'"
+TBV Nh|Ni|Nj
+M Nk:"json_contents"
+M Nl:"b'{\"seq\": 55, \"type\": \"request\", \"command\": \"threads\"}'"
+TBV Nk|Ni|Nl
+M Nm:"_read_line"
+M Nn:"r = self.sock.recv(1024)"
+TBE Nd|227|Nm|Nn
+TBV lr|Nb|Nc
+M No:"i"
+TBV No|bu|Ng
+ETD 7745.463
+M Np:"pydevd.Writer|Thread ID: 5296 (daemon)"
+STD Np|7745.463
+TBE Ma|973|Mb|Mc
+M Nq:"WriterThread"
+M Nr:"<WriterThread(pydevd.Writer, started daemon 5296)>"
+TBV lr|Nq|Nr
+TBE Ma|1016|Md|Me
+TBV lr|Nq|Nr
+TBE ML|53|lY|MM
+TBV lr|Nq|Nr
+TBV MN|K|MO
+M Ns:"cmd = self._cmd_queue.get(True, 0.1)"
+TBE Nd|390|MQ|Ns
+TBV lr|Nq|Nr
+M Nt:"cmd"
+M Nu:"NetCommand"
+M Nv:"<_pydevd_bundle.pydevd_net_command.NetCommand object at 0x00000191AE6A4BE0>"
+TBV Nt|Nu|Nv
+M Nw:"raise Empty"
+TBE Mv|179|Mw|Nw
+M Nx:"<queue.Queue object at 0x00000191A7BF5090>"
+TBV lr|Mt|Nx
+TBV My|a9|bk
+M Ny:"0.1"
+TBV dx|MX|Ny
+M Nz:"endtime"
+M NA:"962487.818"
+TBV Nz|MX|NA
+M NB:"remaining"
+M NC:"-0.010000000009313226"
+TBV NB|MX|NC
+M ND:"self._waiters.remove(waiter)"
+TBE Ma|332|Mz|ND
+M NE:"<Condition(<unlocked _thread.lock object at 0x00000191AA2C8100>, 1)>"
+TBV lr|MB|NE
+M NF:"0.09999999997671694"
+TBV dx|MX|NF
+M NG:"<locked _thread.lock object at 0x00000191AFA7D540>"
+TBV MD|ME|NG
+TBV MG|ac|ad
+TBV MH|a9|ba
+ETD 7745.464
+M NH:"MainThread|Thread ID: 7080 (non daemon)"
+STD NH|7745.465
+M NI:"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\robocorp\\log\\__init__.py"
+M NJ:"process_snapshot"
+M NK:"robo_logger.process_snapshot()"
+TBE NI|270|NJ|NK
+M NL:"logger_instances"
+M NM:"{<robocorp.log._robo_logger._RoboLogger object at 0x00000191AAE55810>: 1, <robocorp.log._robo_logger._RoboLogger object at 0x00000191AAEA25C0>: 1}"
+TBV NL|K|NM
+M NN:"robo_logger"
+M NO:"_RoboLogger"
+M NP:"<robocorp.log._robo_logger._RoboLogger object at 0x00000191AAE55810>"
+TBV NN|NO|NP
+M NQ:"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M NR:"new_func"
+M NS:"return func(self, *args, **kwargs)"
+TBE NQ|20|NR|NS
+TBV lr|NO|NP
+M l1:"args"
+M l2:"tuple"
+M l3:"()"
+TBV l1|l2|l3
+M J:"kwargs"
+M l4:"{}"
+TBV J|K|l4
+M NT:"func"
+M NU:"<function _RoboLogger.process_snapshot at 0x00000191AAE69510>"
+TBV NT|lv|NU
+M NV:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE NQ|416|NJ|NV
+TBV lr|NO|NP
+M NW:"hide_vars"
+TBV NW|a9|ba
+M NX:"c:\\ProgramData\\robocorp\\ht\\9ba5ab4_b1f3c24_09529949\\lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M NY:"self._dump_threads(hide_vars)"
+TBE NX|748|NJ|NY
+TBV NW|a9|ba
+TBV Mo|Lo|Mp
+M NZ:"entry_id"
+M N0:"'ps_55'"
+TBV NZ|P|N0
+M N1:"entry_type"
+M N2:"'process_snapshot'"
+TBV N1|P|N2
+M N3:"psutil"
+M N4:"<module 'psutil' from 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV N3|Lo|N4
+M N5:"AccessDenied"
+M LA:"type"
+M N6:"<class 'psutil.AccessDenied'>"
+TBV N5|LA|N6
+M N7:"NoSuchProcess"
+M N8:"<class 'psutil.NoSuchProcess'>"
+TBV N7|LA|N8
+M N9:"ZombieProcess"
+M Oa:"<class 'psutil.ZombieProcess'>"
+TBV N9|LA|Oa
+M Ob:"curr_process"
+M Oc:"Process"
+M Od:"psutil.Process(pid=15268, name='python.exe', status='running', started='19:59:34')"
+TBV Ob|Oc|Od
+M Oe:"log_info"
+M Of:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x00000191AE017F40>"
+TBV Oe|lv|Of
+M Og:"memory_info"
+M Oh:"'Total: 7.9 G, Available: 3.0 G, Used: 62.5 %'"
+TBV Og|P|Oh
+M Oi:"child_i"
+M dT:"8"
+TBV Oi|bu|dT
+M Oj:"child"
+M Ok:"psutil.Process(pid=14856, name='chrome.exe', status='running', started='22:08:39')"
+TBV Oj|Oc|Ok
+M bh:"name"
+M Ol:"'chrome.exe'"
+TBV bh|P|Ol
+M Ld:"status"
+M Om:"'running'"
+TBV Ld|P|Om
+M On:"create_time"
+M Oo:"'22:08:39'"
+TBV On|P|Oo
+M Op:"ppid"
+M Oq:"'18852'"
+TBV Op|P|Oq
+M Or:"cmdline"
+M Os:"'C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe --type=renderer --user-data-dir=C:\\\\RobocorpHome\\\\temp\\\\eea522d7440df395\\\\scoped_dir15560_602582527 --no-pre-read-main-dll --enable-automation --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --video-capture-use-gpu-memory-buffer --lang=es --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1742852834285716 --launch-time-ticks=962485440658 --field-trial-handle=1996,i,15980171538828589808,14602545118965208601,262144 --variations-seed-version --enable-logging=handle --log-file=4688 --log-level=0 --mojo-platform-channel-handle=4684 /prefetch:1'"
+TBV Or|P|Os
+M Ot:"rss"
+M Ou:"'27.4 M'"
+TBV Ot|P|Ou
+M Ov:"vms"
+M Ow:"'13.1 M'"
+TBV Ov|P|Ow
+M Ox:"proc_memory_info"
+M Oy:"pmem"
+M Oz:"pmem(rss=28696576, vms=13774848, num_page_faults=7680, peak_wset=28700672, wset=28696576, peak_paged_pool=657584, paged_pool=641408, peak_nonpaged_pool=18440, nonpaged_pool=18296, pagefile=13774848, peak_pagefile=13774848, private=13774848)"
+TBV Ox|Oy|Oz
+M Lg:"message"
+M OA:"'Subprocess: chrome.exe (pid: 14856, status: running)\\nCommand Line: C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe --type=renderer --user-data-dir=C:\\\\RobocorpHome\\\\temp\\\\eea522d7440df395\\\\scoped_dir15560_602582527 --no-pre-read-main-dll --enable-automation --remote-debugging-port=0 --test-type=webdriver --allow-pre-commit-input --video-capture-use-gpu-memory-buffer --lang=es --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --time-ticks-at-unix-epoch=-1742852834285716 --launch-time-ticks=962485440658 --field-trial-handle=1996,i,15980171538828589808,14602545118965208601,262144 --variations-seed-version --enable-logging=handle --log-file=4688 --log-level=0 --mojo-platform-channel-handle=4684 /prefetch:1\\nStarted: 22:08:39\\nParent pid: 18852\\nResident Set Size: 27.4 M\\nVirtual Memory Size: 13.1 M'"
+TBV Lg|P|OA
+M OB:"_RoboOutputImpl"
+M OC:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x00000191AAE57A60>"
+TBV lr|OB|OC
+M OD:"_dump_threads"
+M OE:"stack.append((f, f.f_lineno))"
+TBE NX|769|OD|OE
+TBV lr|OB|OC
+TBV NW|a9|ba
+M OF:"7080"
+TBV L5|bu|OF
+M OG:"frame"
+M OH:"<frame at 0x00000191AE6A0A40, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV OG|OG|OH
+M OI:"thread"
+M OJ:"_MainThread"
+M OK:"<_MainThread(MainThread, started 7080)>"
+TBV OI|OJ|OK
+M OL:"title"
+M OM:"'MainThread|Thread ID: 7080 (non daemon)'"
+TBV OL|P|OM
+M ON:"f"
+M OO:"<frame at 0x00000191A7CF5670, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 480, code run>"
+TBV ON|OG|OO
+M OP:"stack"
+M bE:"list"
+M OQ:"[(<frame at 0x00000191B06D2D90, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x00000191AAE84A40, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x00000191AE648D40, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x00000191ACC315D0, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x00000191AE6A0A40, file 'c:\\\\ProgramData\\\\robocorp\\\\ht\\\\9ba5ab4_b1f3c24_09529949\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV OP|bE|OQ
+ETD 7745.492
+EPS 7745.492
+M j:"PASS"
+ET j|e|7745.626
+ER mI|7745.626
